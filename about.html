@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spice Hub | About</title>
+    <!--Favicon icon-->
+    <link rel="icon" type="images/jpg" href="images/logo.jpg">
+    <!--CSS linking-->
+    <link rel="stylesheet" href="aboutcss.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+    <div class="logo">
+    <img src="images/logo.jpg" alt="logo">
+    <span>Spice Hub</span>
+</div>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <button id="modeToggle" class="mode-btn">🌙</button>
+</header>
+
+<!-- ================= STORY ================= -->
+<section class="story">
+    <h1>About Us</h1>
+    <p class="subtitle">Where taste meets passion</p>
+
+    <div class="story-content">
+        <img src="images/R.jpg" alt="Kitchen">
+
+        <div class="story-text">
+            <h2>Welcome to <strong>Spice Hub</strong></h2>
+
+            <p>
+                At <strong>Spice Hub</strong>, we believe that food is more than just a meal — it’s an experience. 
+                Our goal is to bring people together through rich flavors, quality ingredients, and exceptional service.
+            </p>
+
+            <p>
+                This project was created with passion and dedication, combining creativity with modern web design. 
+                Every section of this website reflects teamwork, effort, and attention to detail.
+            </p>
+
+            <p>
+                Whether you're exploring our menu or learning about our team, we aim to deliver a smooth and engaging experience.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= VALUES ================= -->
+<section class="values-section">
+    <h1>Our Values</h1>
+    <p class="subtitle">What makes us different</p>
+
+    <div class="values-container">
+
+        <div class="value-card">
+            <div class="icon">🔥</div>
+            <h2>Passion</h2>
+            <p>We put our heart into every part of this project.</p>
+        </div>
+
+        <div class="value-card">
+            <div class="icon">⭐</div>
+            <h2>Quality</h2>
+            <p>We focus on clean design and user-friendly experience.</p>
+        </div>
+
+        <div class="value-card">
+            <div class="icon">🤝</div>
+            <h2>Teamwork</h2>
+            <p>We worked together to build and improve every feature.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= TEAM ================= -->
+<section class="team">
+    <h1>Meet Our Team</h1>
+    <p class="subtitle">The people behind this project</p>
+
+    <div class="team-container">
+
+        <!-- CARD 1 -->
+        <div class="card" onclick="openCV('images/AimenCV.jpg')">
+            <div class="img-box">
+                <img src="images/profile.png" alt="Aimen">
+            </div>
+            <h2>Aimen Haque</h2>
+            <h4>Frontend Developer</h4>
+            <p>Designed and developed the main UI and layout.</p>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card" onclick="openCV('images/MaryamCV.jpg')">
+            <div class="img-box">
+                <img src="images/profile.png" alt="Maryam">
+            </div>
+            <h2>Maryam Uzair</h2>
+            <h4>UI/UX Designer</h4>
+            <p>Focused on design, styling and user experience.</p>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card" onclick="openCV('images/EmanCV.jpg')">
+            <div class="img-box">
+                <img src="images/profile.png" alt="Eman">
+            </div>
+            <h2>Eman Aleem</h2>
+            <h4>Backend Planner</h4>
+            <p>Handled structure and future database planning.</p>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card" onclick="openCV('images/ArfaCV.jpg')">
+            <div class="img-box">
+                <img src="images/profile.png" alt="Arfa">
+            </div>
+            <h2>Arfa Zain</h2>
+            <h4>Content Manager</h4>
+            <p>Worked on content writing and project ideas.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= CV MODAL ================= -->
+<div id="cvModal" class="cv-modal">
+    <span class="cv-close" onclick="closeCV()">×</span>
+    <img id="cvImage" src="" alt="CV">
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h2 class="logo">Spice Hub</h2>
+      <p>
+        Experience fine dining through design, creativity, and teamwork.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <p>📍 123 Culinary Street</p>
+      <p>📞 (555) 123-4567</p>
+      <p>✉ info@SpiceHub.com</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Hours</h3>
+      <p>Mon - Thu: 11AM - 10PM</p>
+      <p>Fri - Sat: 11AM - 11PM</p>
+      <p>Sunday: 10AM - 9PM</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="#">Facebook</a><br>
+        <a href="#">Instagram</a><br>
+        <a href="#">Twitter</a><br>
+      </div>
+    </div>
+
+  </div>
+
+  <hr>
+
+  <p class="copyright">
+    © 2026 Spice Hub Restaurant. All rights reserved.
+  </p>
+</footer>
+
+<script src="aboutjs.js"></script>
+</body>
+</html>
